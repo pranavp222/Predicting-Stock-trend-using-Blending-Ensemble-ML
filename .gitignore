@@ -6,8 +6,7 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Data (avoid uploading heavy/raw data)
-data/
-*.csv
+data/raw
 
 # Environment
 .env
