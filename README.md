@@ -12,10 +12,17 @@ This project predicts stock price direction using an ensemble of machine learnin
 * Blending Ensemble
 
 ## 📊 Features
+* data['Open-Close'] = (data.Open - data.Close)/data.Open
+* data['High-Low'] = (data.High - data.Low)/data.Low
+* data['Daily_Returns'] = np.log(data['Close']/data['Close'].shift(1))
+* data['Past_Returns'] = data['Daily_Returns'].shift(1)
+* data['ret_5'] = data['Daily_Returns'].rolling(5).mean()
+* data['std_5'] = data['Daily_Returns'].rolling(5).std()
+* data['Momentum_15'] = data['Close'] - data['Close'].shift(15)
+* data['SMA_15'] = data['Close'].rolling(window=15).mean()
+* data['EMA_15'] = data['Close'].ewm(span=15,min_periods=15).mean()
+* data['Trend'] = np.where(data['Daily_Returns'] > 0, 1, 0)
 
-* Technical Indicators (RSI, MACD, Moving Averages)
-* Lag features
-* Price returns
 
 ## 🧪 Methodology
 
@@ -44,4 +51,6 @@ python src/model.py
 
 ## 👤 Author
 
-Pranav Patil
+Pranav Patil,CQF
+Email : pranavp222@gmail.com
+
