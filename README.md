@@ -121,8 +121,8 @@ The goal is to improve prediction robustness by combining multiple machine learn
 <h2><a class="anchor" id="how-to-run-this-project"></a>How to run this Project</h2>
 
 ```bash
-git clone <(https://github.com/pranavp222/Predicting-Stock-trend-using-Blending-Ensemble-ML)>
-cd predicting-stock-trend
+git clone (https://github.com/pranavp222/Predicting-Stock-trend-using-Blending-Ensemble-ML)
+cd predicting-stock-trend-using-Blending-Ensemble-ML
 
 pip install -r requirements.txt
 python main.py
