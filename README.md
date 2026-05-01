@@ -104,15 +104,15 @@ The goal is to improve prediction robustness by combining multiple machine learn
 
 ```
 ├── notebook.ipynb
-├── scripts
-│   ├── data_loader.py
-│   ├── preprocessing.py
+├── src
+│   ├── data.py
+│   ├── eda.py
 │   ├── models.py
-│   ├── ensemble.py
-│   ├── evaluate.py
-│   └── backtesting.py
+│   ├── strategy.py
+│   └── main.py
 ├──images
 ├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
